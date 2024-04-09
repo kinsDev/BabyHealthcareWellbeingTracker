@@ -17,7 +17,7 @@
                               <p> Gender : <%= child.gender %> </p>
                               <p> DOB : <%= child.dob %> </p>
                               <p> Adderss : <%= parent.address %>  </p>
-                              <p> <button id="ImageForm" class="btn btn-warning"> Add Image </button> </p>
+                              <!--<p> <button id="ImageForm" class="btn btn-warning"> Add Image </button> </p>-->
                               <form id="childImage" enctype="multipart/form-data" action="/addImage-<%=child._id%>?_method=PUT" method="POST" >
                                  <div class="form-group row align-items-center">
                                     <div class="col-md-12">
@@ -106,7 +106,7 @@
                               <div class="iq-card">
                                  <div class="iq-card-header d-flex justify-content-between">
                                     <h4 class="card-title">Doctor</h4>
-                                    <a class="btn btn-dark" href="viewDoctersBy-<%=child._id%>" style="color: white;">View Docters</a>
+                                    <a class="btn btn-dark" href="viewDoctersBy-<%=child._id%>" style="color: white;">View Doctors</a>
                                  </div>
                               </div>
                            </div>

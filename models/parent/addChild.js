@@ -15,16 +15,14 @@ addChild = (req,res) => {
         }else{
             Vaccine.create({
                 details : [
-                { vaccineName : "BCG",whenToGive : "At birth or as early as possible till one year of age", dose : "0.1ml (0.05ml until 1 month age)",route : "Intra-muscular" ,site : "Left Upper Arm ",schedule : "Not Scheduled Yet"},
-                { vaccineName : "Hepatitis B - Birth dose", whenToGive : "At birth or as early as possible within 24 hours ", dose : "0.5ml",route : "Intra-muscular" ,site : "Intra-muscular ",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "OPV-0 ", whenToGive : "At birth or as early as possible within the first 15 days", dose : "2 drops",route : "Oral" ,site : "Oral",schedule : "Not Scheduled Yet"  },
+                { vaccineName : "BCG",whenToGive : "At birth or as early as possible within the first 15 days", dose : "1 dose",route : "Intradermal" ,site : "Left Upper Arm ",schedule : "Not Scheduled Yet"},
+                { vaccineName : "Hepatitis B", whenToGive : "At birth or as early as possible within the first 15 days", dose : "1 dose",route : "Intramuscular" ,site : "Left thigh",schedule : "Not Scheduled Yet"  },
+                { vaccineName : "OPV-0 ", whenToGive : "At birth or as early as possible within the first 15 days", dose : "1 dose",route : "Oral" ,site : "By mouth",schedule : "Not Scheduled Yet"  },
                 { vaccineName : "OPV 1, 2 & 3 ", whenToGive : "At 6 weeks, 10 weeks & 14 weeks (OPV can be given till 5 years of age)", dose : "2 drops",route : "Oral" ,site : "Oral",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "Pentavalent 1, 2 & 3", whenToGive : "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)", dose : "0.5 ml",route : "Intra-muscular" ,site : "Antero-lateral side of mid-thigh",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "Rotavirus#", whenToGive : "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)", dose : "5 drops",route : "Oral" ,site : "Oral",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "IPV ", whenToGive : "Two fractional dose at 6 and 14 weeks of age", dose : "0.1 ml ",route : "Intra dermal two fractional dose" ,site : "Intra-dermal: Right upper arm",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "Measles /MR 1st Dose$", whenToGive : "9 completed months-12 months (can be given till 5 years of age)", dose : "0.5 ml ",route : "Sub-cutaneous " ,site : "Right upper Arm",schedule : "Not Scheduled Yet"  },    
-                { vaccineName : "JE - 1** ", whenToGive : "9 completed months-12 months", dose : "0.5 ml ",route : "Sub-cutaneous " ,site : "Left upper Arm",schedule : "Not Scheduled Yet"  },
-                { vaccineName : "Vitamin A(1st dose)", whenToGive : "At 9 completed months with measlesRubella", dose : "1 ml( 1 lakh IU)",route : "Oral" ,site : "Oral ",schedule : "Not Scheduled Yet"  },    
+                { vaccineName : "Pentavalent 1, 2 & 3", whenToGive : "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)", dose : "0.5 ml",route : "Intramuscular" ,site : "Antero-lateral side of mid-thigh",schedule : "Not Scheduled Yet"  },
+                { vaccineName : "Pneumococcal Conjugate Vaccine (PCV)", whenToGive : "At 6 weeks, 10 weeks & 14 weeks", dose : "3 doses",route : "Intramascular" ,site : "Right thigh",schedule : "Not Scheduled Yet"  },
+                { vaccineName : "Rotavirus#", whenToGive : "At 6 weeks, 10 weeks & 14 weeks (can be given till one year of age)", dose : "5 drops",route : "Oral" ,site : "Oral",schedule : "Not Scheduled Yet"  }, 
+                { vaccineName : "Measles, Mumps, Rubella (MMR)", whenToGive : "At 9 months and 18 months", dose : "2 doses",route : "Subcutaneous " ,site : "Left upper Arm",schedule : "Not Scheduled Yet"  },   
             ]} , (err,createdVaccine) => {
                 if(err){
                     console.log(err)
